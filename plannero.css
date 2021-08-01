@@ -107,6 +107,16 @@ body{
     justify-content: space-between;
     align-self: center;
 }
+#mainContentArea2{
+    display: flex;
+    height: 90%;
+    width: 90%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
 .notesBlock{
     color:rgb(100,100,100);
     display: flex;
@@ -224,6 +234,75 @@ body{
     text-align: center;
     vertical-align: middle;
     line-height: 2.3vh;
+}
+.ToDoItem{
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    margin-bottom: 1vh;
+    border: 10px;
+    line-height: 4vh;  
+    font-size: 1.1em;
+    font-weight: bold;
+    color:rgb(100,100,100);
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+#ToDoList{
+    width: 100%;
+    list-style-type: none;
+}
+#checkbox{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top:35%;
+}
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgb(220,220,220);
+    display: flex;
+    justify-content: center;
+}
+input[type="checkbox"]:after{
+    content: "X";
+    font-size: 1.1em;
+    display: none;
+    align-content: center;
+    justify-self: center;
+    
+}
+input[type="checkbox"]:hover{
+    background-color: rgb(200,200,200);
+}
+input[type="checkbox"]:checked{
+    background-color: rgb(220,220,220);
+}
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+#newTask{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border: 8px solid rgb(240, 240, 240);
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(100,100,100);
+    box-shadow: 0px 4px 20px -10px rgba(0,0,0,0.25);
+}
+#newTask:hover{
+    border: 8px solid rgb(220, 220, 220);
+    background-color: rgb(220, 220, 220);
 }
 ::-webkit-scrollbar{
     -webkit-appearance: none;
