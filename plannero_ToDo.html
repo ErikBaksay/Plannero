@@ -4,11 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Plannero</title>
+        <link rel="stylesheet" href="plannero_ToDo.css">
         <link rel="stylesheet" href="plannero.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="plannero.js"></script>
+        <script src="plannero_ToDo.js"></script>
     </head>
     
     <body>
@@ -18,8 +19,8 @@
         <div id="bodyGrid">
             <div id="menuArea">
                 <div id="menu">
-                    <div class="menuItem" id="ToDo" onclick="location.href='ToDo.html'">To Do</div>
-                    <div class="menuItem" id="Notes" onclick="location.href='index.html'">Notes</div>
+                    <div class="menuItem" id="ToDo" onclick="location.href='plannero_ToDo.html'">To Do</div>
+                    <div class="menuItem" id="Notes" onclick="location.href='plannero_Notes.html'">Notes</div>
                     <div class="menuItem" id="Calendar">Calendar</div>
                 </div>
             </div>
@@ -27,11 +28,9 @@
                 <div id="mainContentAreaScroll">
                     <div id=mainContentArea2>
                         <div id="newTask">New Task</div>
+                        <div id="save">Save</div>
                         <ul id="ToDoList">
-                            <li><div class="ToDoItem"><p>Sample</p><div><input type="checkbox" id="checkbox"></div></div></li>
-                            <li><div class="ToDoItem"><p>Sample 2</p><div><input type="checkbox" id="checkbox"></div></div></li>
-                            <li><div class="ToDoItem"><p>Sample 3</p><div><input type="checkbox" id="checkbox"></div></div></li>
-                            <li><div class="ToDoItem"><p>Sample 4</p><div><input type="checkbox" id="checkbox"></div></div></li>
+                            
                         </ul>
 
                     </div>

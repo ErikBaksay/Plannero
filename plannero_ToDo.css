@@ -1,0 +1,111 @@
+#mainContentArea2{
+    display: flex;
+    position: relative;
+    height: 90%;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+.ToDoItem{
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    margin-bottom: 1vh;
+    border: 10px;
+    line-height: 4vh;  
+    font-size: 1.1em;
+    font-weight: bold;
+    color:rgb(100,100,100);
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+#ToDoList{
+    width: 100%;
+    list-style-type: none;
+}
+.checkbox{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top:35%;
+}
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgb(220,220,220);
+    display: flex;
+    justify-content: center;
+}
+input[type="checkbox"]:after{
+    content: "X";
+    font-size: 1.1em;
+    display: none;
+    align-content: center;
+    justify-self: center;
+    
+}
+input[type="checkbox"]:hover{
+    background-color: rgb(200,200,200);
+}
+input[type="checkbox"]:checked{
+    background-color: rgb(220,220,220);
+}
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+#newTask{
+    display: flex;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    border: 8px solid rgb(240, 240, 240);
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(100,100,100);
+    box-shadow: 0px 4px 20px -10px rgba(0,0,0,0.25);
+}
+#newTask:hover{
+    border: 8px solid rgb(220, 220, 220);
+    background-color: rgb(220, 220, 220);
+}
+#save{
+    position: relative;
+    display: flex;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    border: 8px solid #68B699;
+    border-radius: 10px;
+    background-color: #68B699;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 4px 20px -10px rgba(0,0,0,0.25);
+}
+#save:hover{
+    border: 8px solid #49977B;
+    background-color: #49977B;
+}
+#save:active{
+    border: 8px solid #428A70;
+    background-color: #428A70;
+}
+.removeTask{
+    display: flex;
+    position: absolute;
+    right: 2vw;
+    top:10%;
+    font-size: 0.8em;
+}

@@ -50,7 +50,7 @@ $(function (){
                             '</div>'+
                             '<div class="noteTextAreaContainer">'+
                                 '<div class="noteTextArea">'+
-                                    '<p contenteditable="true" spellcheck="false" class="noteText"></p>'+
+                                    '<p contenteditable="true" spellcheck="false" class="noteText">Write your note here</p>'+
                                 '</div>'+
                             '</div>'+
                         '</div>');
@@ -125,7 +125,7 @@ $(function (){
                             '</div>'+
                             '<div class="noteTextAreaContainer">'+
                                 '<div class="noteTextArea">'+
-                                    '<p contenteditable="true" spellcheck="false" class="noteText"></p>'+
+                                    '<p contenteditable="true" spellcheck="false" class="noteText">Write your note here</p>'+
                                 '</div>'+
                             '</div>'+
                         '</div>');
