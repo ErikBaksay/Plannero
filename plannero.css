@@ -39,6 +39,9 @@ body{
     line-height: 1.3em;
     font-weight: bold;
 }
+#navbar:hover{
+    cursor: pointer;
+}
 #menuArea{
     grid-area: menu;
     display: flex;
@@ -107,7 +110,18 @@ body{
     justify-content: space-between;
     align-self: center;
 }
-
+.fadeInNavbar{
+    animation: fadeInNavbar 0.4s ease-in; 
+}
+.fadeInGrid{
+    animation: fadeInGrid 0.4s ease-in;
+}
+.fadeOutNavbar{
+    animation: fadeOutNavbar 0.4s ease-in forwards;
+}
+.fadeOutGrid{
+    animation: fadeOutGrid 0.4s ease-in forwards;
+}
 ::-webkit-scrollbar{
     -webkit-appearance: none;
     width: 10px;
@@ -128,6 +142,59 @@ body{
     border: 0px solid rgba(255,255,255,0);
     background-clip: content-box;
     background-color: #C0C0C0;
+}
+@keyframes fadeInGrid{
+    0%{
+        transform: translateY(8%);
+        opacity: 0;
+    }
+    20%{
+        transform: translateY(8%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeInNavbar{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    20%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeOutGrid{
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    80%{
+        transform: translateY(-8%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-8%);
+        opacity: 0;
+    }
+}
+@keyframes fadeOutNavbar{
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {opacity: 0;}
 }
 @media only screen and (max-width:550px){
     /* Tu este doplnim nastavenia pre mobil: 
