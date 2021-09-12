@@ -14,7 +14,7 @@ body{
     overflow-y: hidden;
 }
 #bodyGrid{
-    height: 100vh;
+    height: -webkit-fill-available;
     width: 100vw;
     
     display: grid;
