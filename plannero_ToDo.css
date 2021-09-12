@@ -30,9 +30,9 @@
 }
 .checkbox{
     display: flex;
-    position: absolute;
-    right: 0;
-    top:35%;
+    /*position: absolute;
+    left: 0;
+    top:35%;*/
 }
 input[type="checkbox"]{
     appearance: none;
@@ -41,7 +41,7 @@ input[type="checkbox"]{
     width: 20px;
     cursor: pointer;
     border-radius: 3px;
-    background-color: rgb(220,220,220);
+    background-color: rgb(210, 210, 210);
     display: flex;
     justify-content: center;
 }
@@ -54,10 +54,10 @@ input[type="checkbox"]:after{
     
 }
 input[type="checkbox"]:hover{
-    background-color: rgb(200,200,200);
+    background-color: rgb(190,190,190);
 }
 input[type="checkbox"]:checked{
-    background-color: rgb(220,220,220);
+    background-color: rgb(210,210,210);
 }
 input[type="checkbox"]:checked:after{
     display: block;
@@ -105,7 +105,11 @@ input[type="checkbox"]:checked:after{
 .removeTask{
     display: flex;
     position: absolute;
-    right: 2vw;
+    right: 0.5vw;
     top:10%;
     font-size: 0.8em;
+}
+#checkboxDiv{
+    height: 20px;
+    width: 28px;
 }
