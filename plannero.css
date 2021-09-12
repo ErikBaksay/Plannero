@@ -14,8 +14,8 @@ body{
     overflow-y: hidden;
 }
 #bodyGrid{
-    height: -webkit-fill-available;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     
     display: grid;
     grid-template-columns: 0.15fr 0.85fr;
@@ -85,7 +85,7 @@ body{
 }
 #mainContentAreaFlex{
     grid-area: mainContent;
-    height: 100vh;
+    height: 100%;
     width: 85vw;
     display: flex;
     justify-content: center;
@@ -197,8 +197,8 @@ body{
 }
 @media only screen and (max-width:550px){
     #bodyGrid {
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 0.9fr 0.1fr;
         grid-template-areas:
