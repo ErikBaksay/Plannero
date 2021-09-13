@@ -1,3 +1,6 @@
+*{
+    font-size: 1em;
+}
 #mainContentArea2{
     display: flex;
     position: relative;
@@ -112,4 +115,16 @@ input[type="checkbox"]:checked:after{
 #checkboxDiv{
     height: 20px;
     width: 28px;
+}
+@media only screen and (max-width:550px){
+    *{
+     
+        font-size: 0.97em;
+    }
+    #newTask{
+        border: 5px solid rgb(240, 240, 240);
+    }
+    #save{
+        border: 5px solid #68B699;
+    }
 }

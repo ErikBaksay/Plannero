@@ -116,3 +116,19 @@
     vertical-align: middle;
     line-height: 2.3vh;
 }
+@media only screen and (max-width:550px){
+    *{
+     
+        font-size: 0.97em;
+    }
+    .removeNote{
+        right:5px;
+    }
+    .saveNote{
+        right:22px;
+    }
+    .noteTitleText{
+        margin-left: 8px;
+        margin-top: auto;
+    }
+}
