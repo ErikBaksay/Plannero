@@ -17,7 +17,7 @@ $(function (){
         if (savedToDoList !== null){
             ToDoList.innerHTML = localStorage.getItem("savedToDoList");
         } else{
-            $ToDoList.append('<li><div class="ToDoItem"><p contenteditable="true" spellcheck="false">Write your task here</p><div class="removeTask">Remove</div><div><input type="checkbox" class="checkbox"></div></div></li>');
+            $ToDoList.append('<li><div class="ToDoItem"><div id=checkboxDiv><input type="checkbox" class="checkbox"></div><p contenteditable="true" spellcheck="false">Write your task here</p><div class="removeTask">Remove</div></div></li>');
         }
         $removeTaskButtons = $('.removeTask');
         $checkboxes = $('.checkbox'); 
@@ -33,7 +33,7 @@ $(function (){
     })
 
     $NewTaskButton.click(function(){
-        $ToDoList.append('<li><div class="ToDoItem"><div id=checkboxDiv><input type="checkbox" class="checkbox"></div><p contenteditable="true" spellcheck="false">Write your task here</p><div class="removeTask">Remove</div><div></div></div></li>');
+        $ToDoList.append('<li><div class="ToDoItem"><div id=checkboxDiv><input type="checkbox" class="checkbox"></div><p contenteditable="true" spellcheck="false">Write your task here</p><div class="removeTask">Remove</div></div></li>');
         $removeTaskButtons = $('.removeTask');
         for (i = 0; i < $removeTaskButtons.length; i++){
             $removeTaskButtons[i].addEventListener('click', removeTaskFunction);
