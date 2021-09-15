@@ -110,13 +110,13 @@ body{
     align-self: center;
 }
 .fadeInNavbar{
-    animation: fadeInNavbar 0.4s ease-in; 
+    /*animation: fadeInNavbar 0.4s ease-in;*/ 
 }
 .fadeInGrid{
     animation: fadeInGrid 0.4s ease-in;
 }
 .fadeOutNavbar{
-    animation: fadeOutNavbar 0.4s ease-in forwards;
+    /*animation: fadeOutNavbar 0.4s ease-in forwards;*/
 }
 .fadeOutGrid{
     animation: fadeOutGrid 0.4s ease-in forwards;
@@ -206,35 +206,20 @@ body{
             "menu";
     }
     #menu{
-        height: 8vh;
-        width: 97vw;
+        height: 7vh;
+        width: 93vw;
         border-radius: 15px;
         position: fixed;
         flex-direction: row;
         background-color: rgba(250,250,250,0.6);
-
+    }
+    .menuItem{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
     }
     #mainContentAreaFlex{
         height: 100%;
         width: 100%;
     }
 }
-/*
-<div id="navbar">Plannero</div>
-        <div id="menu">
-            <ul>
-                <div>
-                <li><a>To Do</a></li>
-                </div>
-                <div>
-                <li><a>Calendar</a></li>
-                </div>
-                <div>
-                <li><a>Notes</a></li>
-                </div>
-            </ul>
-        </div>
-        <div id="main">
-
-        </div>
-*/

@@ -1,6 +1,6 @@
 function goToToDo(){
     var navbar = document.getElementById('navbar');
-    var grid = document.getElementById('bodyGrid');
+    var grid = document.getElementById('mainContentAreaFlex');
 
     navbar.classList.remove("fadeInNavbar");
     grid.classList.remove("fadeInGrid");
@@ -15,7 +15,7 @@ function goToToDo(){
 }
 function goToNotes(){
     var navbar = document.getElementById('navbar');
-    var grid = document.getElementById('bodyGrid');
+    var grid = document.getElementById('mainContentAreaFlex');
 
     navbar.classList.remove("fadeInNavbar");
     grid.classList.remove("fadeInGrid");
@@ -30,7 +30,7 @@ function goToNotes(){
 }
 function goToCalendar(){
     var navbar = document.getElementById('navbar');
-    var grid = document.getElementById('bodyGrid');
+    var grid = document.getElementById('mainContentAreaFlex');
 
     navbar.classList.remove("fadeInNavbar");
     grid.classList.remove("fadeInGrid");

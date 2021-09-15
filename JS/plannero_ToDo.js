@@ -4,7 +4,7 @@ $(function (){
     var $removeTaskButtons = $('.removeTask');
     var $ToDoList = $('#ToDoList');
     var savedToDoList = localStorage.getItem("savedToDoList");
-    var $checkboxes = $('.checkbox'); 
+    var $checkboxes = $('.checkbox');
 
     var autosaveFunction = function(){
         $SaveButton.click();

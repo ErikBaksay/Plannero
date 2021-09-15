@@ -5,20 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Plannero</title>
-        <link rel="stylesheet" href="plannero_Calendar.css">
-        <link rel="stylesheet" href="plannero.css">
+        <link rel="stylesheet" href="./CSS/plannero_Calendar.css">
+        <link rel="stylesheet" href="./CSS/plannero.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="plannero.js"></script>
-        <script src="plannero_Calendar.js"></script>
+        <script src="./JS/plannero.js"></script>
+        <script src="./JS/plannero_Calendar.js"></script>
     </head>
     
     <body>
         
         <div id="navbar" class="fadeInNavbar"onclick="location.href='index.html'">Plannero</div>
         
-        <div id="bodyGrid" class="fadeInGrid">
+        <div id="bodyGrid">
             <div id="menuArea">
                 <div id="menu">
                     <div class="menuItem" id="ToDo" onclick="goToToDo()">To Do</div>
@@ -26,7 +26,7 @@
                     <div class="menuItem" id="Calendar" onclick="goToCalendar()">Calendar</div>
                 </div>
             </div>
-            <div id="mainContentAreaFlex">
+            <div id="mainContentAreaFlex" class="fadeInGrid">
                 <div id="mainContentAreaScroll">
                     <div id=mainContentArea2>
                         <h1>Coming Soon</h1>
